@@ -1,0 +1,30 @@
+name: CI
+
+on:
+    push:
+        branches:
+            -main
+
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkot@v3
+
+            - name: Set up Python
+              uses: actions/setup-python@v4
+              with:
+                python-version: "3.8"
+
+            - name: Venv Enviroment
+              run: |
+                python -m venv venv
+                source venv/bin/acticate
+
+            - name: Run tests
+              run: |
+                source venv/bin/activate
+                python -m unnittest tests/test_main_v1.py
