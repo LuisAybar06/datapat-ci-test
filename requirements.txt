@@ -6,3 +6,5 @@ mypy
 #-----------ci-v3----------------
 nbformat
 pytest
+
+nbconvert
