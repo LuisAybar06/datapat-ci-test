@@ -10,7 +10,7 @@ def concatenate_strings(strings: List[str]) -> str:
 
 
 def display_message(message: str) -> str:
-    print(message)
+    return print(message)
 
 
 def main() -> str:
