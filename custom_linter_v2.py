@@ -58,7 +58,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Custom Linter")
     parser.add_argument("directories", nargs='+', help="Directories to lint")
     parser.add_argument("--max-line-length", type=int, default=88, help="Max line length")
-    parser.add_argument("--max-args", type=int, default=5, help="Max number of arguments in functions")
+    parser.add_argument("--max-args", type=int, default=1, help="Max number of arguments in functions")
 
     args = parser.parse_args()
 
