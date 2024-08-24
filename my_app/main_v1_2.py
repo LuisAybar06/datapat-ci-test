@@ -12,7 +12,6 @@ def concatenate_strings(strings: List[str]) -> str:
 def display_message(message: str) -> str:
     return message
 
-
 def main() -> str:
     data = process_data("example")
     print(data)
