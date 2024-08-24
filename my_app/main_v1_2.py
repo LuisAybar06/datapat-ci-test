@@ -1,7 +1,7 @@
 from typing import List
 
 
-def process_data(data: str):
+def process_data(data: str) ->str:
     return data
 
 
@@ -9,7 +9,7 @@ def concatenate_strings(strings: List[str]) -> str:
     return ''.join(strings)
 
 
-def display_message(message: str):
+def display_message(message: str) -> str:
     print(message)
 
 
@@ -18,8 +18,8 @@ def main() -> str:
     print(data)
     strings = ["hello", "world"]
     concatenated = concatenate_strings(strings)
-    display_message(concatenated)
-
+    x = display_message(concatenated)
+    return x
 
 if __name__ == "__main__":
     main()
