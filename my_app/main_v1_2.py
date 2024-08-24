@@ -1,7 +1,10 @@
 from typing import List
 
+
 def process_data(data):
     return data
+
+
 def concatenate_strings(strings: List[str]) -> str:
     return ''.join(strings)
 
@@ -9,11 +12,10 @@ def concatenate_strings(strings: List[str]) -> str:
 def display_message(message):
     print(message)
 
-def main():
 
+def main():
     data = process_data("example")
     print(data)
-    
     strings = ["hello", "world"]
     concatenated = concatenate_strings(strings)
     display_message(concatenated)
